@@ -11,27 +11,33 @@ const AuthLayout = (props) => {
                     Welcome, Please enter your credentials!
                 </p>
                 {children}
-                <p className="text-sm mt-5 text-center">
-                    {/* Ternarry kondisi 1-2 pilihan */}
-                    { type === 'login' 
-                        ? "Don't have an account? " 
-                        : "Already have an account " }
-
-                    {/* AND jika pilihan lebih dari 2 pilihan */}
-                    { type === 'login' && (
-                        <Link to="/register" className="font-bold text-blue-600">
-                            Sign up
-                        </Link>
-                    )}
-                    { type === 'register' && (
-                        <Link to="/login" className="font-bold text-blue-600">
-                            Sign in
-                        </Link>
-                    )}
-                </p>
+                <Navigation type={type} />
             </div>
         </div>
     )
 };
+
+// With new component
+const Navigation  = ({type}) => {
+  if (type === 'login') {
+    return (
+      <p className="text-sm mt-5 text-center">
+          Don't have an account?{" "}
+          <Link to="/register" className="font-bold text-blue-600">
+              Sign up
+          </Link>
+      </p>
+    )
+  } else {
+    return (
+      <p className="text-sm mt-5 text-center">
+          Already have an account?{" "}
+          <Link to="/login" className="font-bold text-blue-600">
+              Sign in
+          </Link>
+      </p>
+    )
+  }
+}
 
 export default AuthLayout;
