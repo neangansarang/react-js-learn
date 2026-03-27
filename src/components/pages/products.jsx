@@ -1,6 +1,9 @@
 import { Fragment } from "react";
 import CardProduct from "../Fragments/CardProduct";
 import Button from "../Elements/Button";
+import Counter from "../Fragments/Counter";
+
+// Stateless / Functional Component 
 
 const products = [
     {
@@ -24,20 +27,20 @@ const products = [
         image: "/images/shoes-3.jpg",
         description: "Sepatu Cats dengan sol karet tebalnya berdiri kokoh seperti punya pendirian — tidak peduli medan berlumpur, aspal retak, atau hati yang patah."
     },
-    {
-        id: 4,
-        name: "Sepatu Bots",
-        price: "Rp. 1.550.000",
-        image: "/images/shoes-4.jpg",
-        description: "Boots kulit itu melangkah dengan percaya diri, seolah tahu bahwa ke mana pun ia pergi, tanah di bawahnya yang harusnya merasa terhormat."
-    },
-    {
-        id: 5,
-        name: "Sepatu Pantopel",
-        price: "Rp. 550.000",
-        image: "/images/shoes-5.jpg",
-        description: "Pantofel hitam mengkilap itu tampak terlalu serius untuk pesta, namun terlalu elegan untuk diabaikan."
-    },
+    // {
+    //     id: 4,
+    //     name: "Sepatu Bots",
+    //     price: "Rp. 1.550.000",
+    //     image: "/images/shoes-4.jpg",
+    //     description: "Boots kulit itu melangkah dengan percaya diri, seolah tahu bahwa ke mana pun ia pergi, tanah di bawahnya yang harusnya merasa terhormat."
+    // },
+    // {
+    //     id: 5,
+    //     name: "Sepatu Pantopel",
+    //     price: "Rp. 550.000",
+    //     image: "/images/shoes-5.jpg",
+    //     description: "Pantofel hitam mengkilap itu tampak terlalu serius untuk pesta, namun terlalu elegan untuk diabaikan."
+    // },
 ]
 
 const getEmail = localStorage.getItem("email");
@@ -69,6 +72,9 @@ const ProductsPage = () => {
                         <CardProduct.Footer price={product.price} />
                     </CardProduct>
                 ))}
+            </div>
+            <div className="flex w-100 justify-center">
+                <Counter></Counter>
             </div>
         </Fragment>
     )
