@@ -101,6 +101,16 @@ nvm use 20.19
 
 - **Mar 28, 2026** - Initial project setup with Vite and React 19
 - **Mar 28, 2026** - Added authentication pages (Login & Register)
+- **Mar 28, 2026** - Add to cart module with qty update using useState (React Hooks)
+- **Mar 28, 2026** - Updated .gitignore to ignore lock.json files
+- **Mar 28, 2026** - Added nvm version info (Node.js 20.19.x)
+- **Mar 28, 2026** - Sample case implementation for add to cart functionality
+- **Mar 28, 2026** - Learn how state works with React
+- **Mar 27, 2026** - Event handler learning & save data to local storage
+- **Mar 27, 2026** - Learn event handler implementation
+- **Mar 27, 2026** - Nested component & rendering list
+- **Mar 28, 2026** - Initial project setup with Vite and React 19
+- **Mar 28, 2026** - Added authentication pages (Login & Register)
 - **Mar 28, 2026** - Implemented product listing page
 - **Mar 28, 2026** - Integrated Tailwind CSS v4 and React Router
 
