@@ -97,6 +97,25 @@ nvm use 20.19
 - Uncomment `LoginPage` in `App.jsx` to switch between pages
 - Tailwind CSS v4 uses the new `@tailwindcss/vite` plugin for faster builds
 
+## 📄 Recent Updates
+
+### March 27, 2026 - Foundation & Basics
+- **Nested Component & Rendering List** - Learning component composition and list rendering
+- **Event Handler Implementation** - Understanding React event handling
+- **Event Handler & Local Storage** - Saving data to browser's local storage
+
+### March 28, 2026 - Project Setup & Features
+- **Initial Project Setup** - Vite 7 with React 19 and Tailwind CSS v4
+- **Authentication Pages** - Login & Register forms with AuthLayout
+- **React Router Integration** - Client-side routing with React Router DOM 7
+- **Product Listing Page** - Product display with image assets
+- **Add to Cart Module** - Cart functionality with quantity update using useState (React Hooks)
+- **State Management Learning** - Understanding how state works in React
+- **Sample Case Implementation** - Practical add to cart functionality
+- **Configuration Updates** - Updated .gitignore to ignore lock.json files
+- **Node Version Info** - Added nvm version reference (Node.js 20.19.x)
+- **Documentation Cleanup** - Replaced placeholder characters in README
+
 ## 📄 License
 
 This project is for learning purposes.

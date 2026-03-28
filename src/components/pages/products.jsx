@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import CardProduct from "../Fragments/CardProduct";
 import Button from "../Elements/Button";
+import Counter from "../Fragments/Counter";
 
 // Stateless / Functional Component 
 
@@ -46,12 +47,7 @@ const getEmail = localStorage.getItem("email");
 
 const ProductsPage = () => {
 
-    const [cart, setCart] = useState([
-        {
-            id: 1,
-            qty: 1,
-        }
-    ]);
+    const [cart, setCart] = useState([]);
 
     const handleLogout = () => {
         localStorage.removeItem('email')
@@ -60,13 +56,13 @@ const ProductsPage = () => {
     }
 
     const handleAddToCart = (id) => {
-        setCart([
-            ...cart, // Spreed Operator
-            {
-                id,
-                qty: 1,
-            }
-        ])
+        if(cart.find((item) => item.id === id)) {
+            setCart(
+                cart.map((item) => item.id === id ? {...item, qty: item.qty + 1} : item)
+            )
+        } else {
+            setCart([...cart, {id, qty: 1}])
+        }
     }
 
     return (
@@ -126,6 +122,10 @@ const ProductsPage = () => {
                         </tbody>
                     </table>
                 </div>
+
+            </div>
+            <div className="mt-5 flex justify-center">
+                <Counter></Counter>
             </div>
         </Fragment>
     )
