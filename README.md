@@ -1,16 +1,97 @@
-# React + Vite
+# React Beginner App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React learning project built with Vite, React Router, and Tailwind CSS. This project demonstrates fundamental React concepts including components, routing, and modern styling approaches.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** - UI library
+- **Vite 7** - Fast build tool and dev server
+- **React Router DOM 7** - Client-side routing
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **ESLint** - Code linting and best practices
 
-## React Compiler
+## 📁 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+react-js-learn/
+├── public/
+│   └── images/              # Static image assets
+├── src/
+│   ├── components/
+│   │   ├── Elements/        # UI elements
+│   │   ├── Fragments/       # Fragment components
+│   │   ├── Layouts/         # Layout components (AuthLayout)
+│   │   └── pages/           # Page components
+│   │       ├── login.jsx    # Login page
+│   │       ├── register.jsx # Register page
+│   │       └── products.jsx # Products page
+│   ├── assets/              # Imported assets
+│   ├── App.jsx              # Main app component
+│   ├── App.css              # App styles
+│   ├── index.css            # Global styles
+│   └── main.jsx             # Entry point
+└── index.html               # HTML template
+```
 
-## Expanding the ESLint configuration
+## 🛠️ Available Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run ESLint
+npm run lint
+
+# Preview production build
+npm run preview
+```
+
+## 📦 Features
+
+- **Authentication Pages**: Login and Register forms with layout
+- **Product Page**: Product listing demonstration
+- **Responsive Design**: Built with Tailwind CSS utilities
+- **Client-side Routing**: Navigation using React Router
+- **Hot Module Replacement**: Fast refresh during development
+
+## 🎯 Learning Topics
+
+This project covers:
+- React components and props
+- React Router for navigation
+- Tailwind CSS utility classes
+- Component composition
+- Layout patterns
+- Vite build configuration
+
+## 🚦 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+
+### Installation
+
+1. Clone or navigate to the project directory
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser to `http://localhost:5173`
+
+## 📝 Notes
+
+- The main app currently renders the `RegisterPage` component
+- Uncomment `LoginPage` in `App.jsx` to switch between pages
+- Tailwind CSS v4 uses the new `@tailwindcss/vite` plugin for faster builds
+
+## 📄 License
+
+This project is for learning purposes.
