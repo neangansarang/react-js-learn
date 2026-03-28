@@ -46,12 +46,7 @@ const getEmail = localStorage.getItem("email");
 
 const ProductsPage = () => {
 
-    const [cart, setCart] = useState([
-        {
-            id: 1,
-            qty: 1,
-        }
-    ]);
+    const [cart, setCart] = useState([]);
 
     const handleLogout = () => {
         localStorage.removeItem('email')
