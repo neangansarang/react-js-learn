@@ -99,20 +99,22 @@ nvm use 20.19
 
 ## 📄 Recent Updates
 
-- **Mar 28, 2026** - Initial project setup with Vite and React 19
-- **Mar 28, 2026** - Added authentication pages (Login & Register)
-- **Mar 28, 2026** - Add to cart module with qty update using useState (React Hooks)
-- **Mar 28, 2026** - Updated .gitignore to ignore lock.json files
-- **Mar 28, 2026** - Added nvm version info (Node.js 20.19.x)
-- **Mar 28, 2026** - Sample case implementation for add to cart functionality
-- **Mar 28, 2026** - Learn how state works with React
-- **Mar 27, 2026** - Event handler learning & save data to local storage
-- **Mar 27, 2026** - Learn event handler implementation
-- **Mar 27, 2026** - Nested component & rendering list
-- **Mar 28, 2026** - Initial project setup with Vite and React 19
-- **Mar 28, 2026** - Added authentication pages (Login & Register)
-- **Mar 28, 2026** - Implemented product listing page
-- **Mar 28, 2026** - Integrated Tailwind CSS v4 and React Router
+### March 27, 2026 - Foundation & Basics
+- **Nested Component & Rendering List** - Learning component composition and list rendering
+- **Event Handler Implementation** - Understanding React event handling
+- **Event Handler & Local Storage** - Saving data to browser's local storage
+
+### March 28, 2026 - Project Setup & Features
+- **Initial Project Setup** - Vite 7 with React 19 and Tailwind CSS v4
+- **Authentication Pages** - Login & Register forms with AuthLayout
+- **React Router Integration** - Client-side routing with React Router DOM 7
+- **Product Listing Page** - Product display with image assets
+- **Add to Cart Module** - Cart functionality with quantity update using useState (React Hooks)
+- **State Management Learning** - Understanding how state works in React
+- **Sample Case Implementation** - Practical add to cart functionality
+- **Configuration Updates** - Updated .gitignore to ignore lock.json files
+- **Node Version Info** - Added nvm version reference (Node.js 20.19.x)
+- **Documentation Cleanup** - Replaced placeholder characters in README
 
 ## 📄 License
 
