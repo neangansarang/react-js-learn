@@ -97,6 +97,13 @@ nvm use 20.19
 - Uncomment `LoginPage` in `App.jsx` to switch between pages
 - Tailwind CSS v4 uses the new `@tailwindcss/vite` plugin for faster builds
 
-## 📄 License
+## � Recent Updates
+
+- **Mar 28, 2026** - Initial project setup with Vite and React 19
+- **Mar 28, 2026** - Added authentication pages (Login & Register)
+- **Mar 28, 2026** - Implemented product listing page
+- **Mar 28, 2026** - Integrated Tailwind CSS v4 and React Router
+
+## �📄 License
 
 This project is for learning purposes.
