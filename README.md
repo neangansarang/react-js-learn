@@ -71,7 +71,12 @@ This project covers:
 
 ### Prerequisites
 
-- Node.js 18+ installed
+- Node.js 20.19.x or higher
+- nvm (Node Version Manager) recommended
+
+```bash
+nvm use 20.19
+```
 
 ### Installation
 
